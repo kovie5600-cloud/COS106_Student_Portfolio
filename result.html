@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>STUDENT RESULT MANAGEMENT SYSTEM</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="planner.html">Academic Planner</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="result-form-section">
+
+            <h2>Enter Student Result</h2>
+
+            <form id="resultForm">
+
+                <p>
+                    <label>Student Name</label><br>
+                    <input type="text" id="studentName">
+                </p>
+
+                <p>
+                    <label>Matriculation Number</label><br>
+                    <input type="text" id="matricNumber">
+                </p>
+
+                <h3>Enter Course Scores</h3>
+
+                <p>
+                    <label>MTH 101 - Introduction to Mathematics</label><br>
+                    <input type="number" id="mth101" min="0" max="100">
+                </p>
+
+                <p>
+                    <label>GST 101 - Use of English Language</label><br>
+                    <input type="number" id="gst101" min="0" max="100">
+                </p>
+
+                <p>
+                    <label>CSC 101 - Introduction to Cybersecurity</label><br>
+                    <input type="number" id="csc101" min="0" max="100">
+                </p>
+
+                <p>
+                    <label>COS 101 - Basic Programming Language</label><br>
+                    <input type="number" id="cos101" min="0" max="100">
+                </p>
+
+                <button type="submit">
+                    Calculate and Add Result
+                </button>
+
+            </form>
+
+            <p id="resultError"></p>
+
+        </section>
+
+        <section class="result-table-section">
+
+            <h2>Students' Results</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Matric Number</th>
+                            <th>MTH 101</th>
+                            <th>GST 101</th>
+                            <th>CSC 101</th>
+                            <th>COS 101</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Grade</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Kenneth Ovie |
+            Miva Open University |
+            Student Result Management System
+        </p>
+
+    </footer>
+
+    <script src="js/result.js"></script>
+
+</body>
+
+</html>

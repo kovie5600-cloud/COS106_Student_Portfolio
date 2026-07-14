@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>CONTACT ME</h1>
+
+    <hr>
+
+    <h2>Send Me a Message</h2>
+
+    <form id="contactForm">
+
+        <p>
+            <label>Full Name</label><br>
+            <input type="text" id="name">
+        </p>
+
+        <p>
+            <label>Email Address</label><br>
+            <input type="text" id="email">
+        </p>
+
+        <p>
+            <label>Phone Number</label><br>
+            <input
+    type="tel"
+    id="phone"
+    placeholder="08012345678"
+    pattern="[0-9]{11}"
+    maxlength="11"
+    inputmode="numeric"
+    oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+    required>
+        </p>
+
+        <p>
+            <label>Message</label><br>
+            <textarea id="contactMessage" rows="6" cols="40"></textarea>
+        </p>
+
+    <button type="button" onclick="sendMessage()">Send Message</button>
+
+    </form>
+
+    <p id="result"></p>
+
+    <hr>
+
+    <h2>My Contact Details</h2>
+
+    <p><b>Name:</b> Kenneth Ovie</p>
+
+    <p><b>University:</b> Miva Open University</p>
+
+    <p><b>Programme:</b> B.Sc. Cyber Security (In View)</p>
+
+    <p><b>Email:</b> k.ovie5600@miva.edu.ng</p>
+
+    <hr>
+
+    <p>
+        <a href="index.html">Back to Home</a>
+    </p>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

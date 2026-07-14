@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Academic Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1>ACADEMIC PLANNER</h1>
+
+    <hr>
+    <h2>Add a New Task</h2>
+
+<form id="taskForm">
+
+<p>
+Task Name<br>
+<input type="text" id="taskName">
+</p>
+
+<p>
+Deadline<br>
+<input type="date" id="taskDate">
+</p>
+
+<button type="submit">
+Add Task
+</button>
+
+</form>
+
+<p id="taskError"></p>
+
+<hr>
+
+<h2>My Academic Tasks</h2>
+
+<ul id="taskList">
+
+</ul>
+
+<hr>
+
+    <h2>My Weekly Study Timetable</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+
+            <th>Day</th>
+
+            <th>Activity</th>
+
+            <th>Time</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Monday</td>
+
+            <td>HTML Practice</td>
+
+            <td>6:00 PM - 8:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Tuesday</td>
+
+            <td>Cyber Security Study</td>
+
+            <td>6:00 PM - 8:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Wednesday</td>
+
+            <td>Programming Practice</td>
+
+            <td>6:00 PM - 8:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Thursday</td>
+
+            <td>Assignment</td>
+
+            <td>7:00 PM - 9:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Friday</td>
+
+            <td>Research</td>
+
+            <td>6:00 PM - 8:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Saturday</td>
+
+            <td>Project Development</td>
+
+            <td>10:00 AM - 2:00 PM</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Sunday</td>
+
+            <td>Revision</td>
+
+            <td>4:00 PM - 6:00 PM</td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>Study Goals</h2>
+
+    <ul>
+
+        <li>Complete COS 106 Project</li>
+
+        <li>Improve HTML Skills</li>
+
+        <li>Learn CSS</li>
+
+        <li>Learn JavaScript</li>
+
+        <li>Become a Better Programmer</li>
+
+    </ul>
+
+    <hr>
+
+    <button onclick="showMessage()">
+
+        Click Here
+
+    </button>
+
+    <p id="message"></p>
+
+    <hr>
+
+    <p>
+
+        <a href="index.html">
+
+            Back to Home
+
+        </a>
+
+    </p>
+
+    <script src="js/planner.js"></script>
+
+</body>
+
+</html>
