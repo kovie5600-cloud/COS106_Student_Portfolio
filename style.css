@@ -463,4 +463,53 @@ footer {
 .welcome-message p{
     line-height:1.6;
     text-align:justify;
+}/* ===========================
+   INTRODUCTION VIDEO
+=========================== */
+
+.video-section{
+    background:#0b2d5c;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    border-radius:12px;
+    margin:40px auto;
+}
+
+.video-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.video-content h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.video-content p{
+    font-size:18px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.portfolio-video{
+    width:100%;
+    max-width:800px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.video-download-button{
+    display:inline-block;
+    margin-top:20px;
+    background:#ffffff;
+    color:#0b2d5c;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.video-download-button:hover{
+    background:#dbe9ff;
 }
